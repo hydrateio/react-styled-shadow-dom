@@ -56,6 +56,8 @@ export default () => (
 )
 ```
 
+You can view the above demo live [here](https://hydrateio.github.io/react-styled-frame).
+
 This seems simple, but it's actually fairly involved. It require using [StyleSheetManager](https://github.com/styled-components/styled-components/pull/1491) and [FrameContextConsumer](https://github.com/ryanseddon/react-frame-component#accessing-the-iframes-window-and-document) in order to properly propagate all styled-components styles.
 
 
