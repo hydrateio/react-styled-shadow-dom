@@ -2,7 +2,7 @@
 
 > React **iframe** that works well with **styled-components**.
 
-[![NPM](https://img.shields.io/npm/v/react-styled-frame.svg)](https://www.npmjs.com/package/react-styled-frame) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-styled-frame.svg)](https://www.npmjs.com/package/react-styled-frame) [![Build Status](https://travis-ci.com/hydrateio/react-styled-frame.svg?branch=master)](https://travis-ci.com/hydrateio/react-styled-frame) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
 ## Install
