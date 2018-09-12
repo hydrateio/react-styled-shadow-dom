@@ -4,6 +4,9 @@
 
 [![NPM](https://img.shields.io/npm/v/react-styled-frame.svg)](https://www.npmjs.com/package/react-styled-frame) [![Build Status](https://travis-ci.com/hydrateio/react-styled-frame.svg?branch=master)](https://travis-ci.com/hydrateio/react-styled-frame) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+- Uses [react-frame-component](https://github.com/ryanseddon/react-frame-component) under the hood
+- Makes it really simple to use styled-somponents in your iframes
+- Useful for testing responsive layouts and ensuring isolation from the parent document
 
 ## Install
 
