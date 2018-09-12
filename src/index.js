@@ -1,22 +1,46 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React from 'react'
+import Frame, { FrameContextConsumer } from 'react-frame-component'
+import { StyleSheetManager, withTheme, ThemeProvider } from 'styled-components'
 
-import styles from './styles.css'
+export default withTheme((props) => {
+  const {
+    theme,
+    style = { },
+    children,
+    ...rest
+  } = props
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
+  // TODO: figure out a better way of including static styles, links, and fonts in the iframe
+  const initialContent = `
+<!DOCTYPE html><html><head>
+  ${document.head.innerHTML}
+</head><body><div></div></body></html>
+`
 
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+  return (
+    <Frame
+      initialContent={initialContent}
+      style={{
+        display: 'block',
+        overflow: 'scroll',
+        border: 0,
+        ...style
+      }}
+      {...rest}
+    >
+      <FrameContextConsumer>
+        {(frameContext) => (
+          <StyleSheetManager target={frameContext.document.head}>
+            {theme ? (
+              <ThemeProvider theme={theme}>
+                {children}
+              </ThemeProvider>
+            ) : (
+              children
+            )}
+          </StyleSheetManager>
+        )}
+      </FrameContextConsumer>
+    </Frame>
+  )
+})
