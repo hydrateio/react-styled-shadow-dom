@@ -1,6 +1,6 @@
 {
   "name": "react-styled-frame",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React iframe that works well with styled-components.",
   "author": "Hydrate Dev",
   "license": "MIT",
