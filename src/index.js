@@ -10,16 +10,8 @@ export default withTheme((props) => {
     ...rest
   } = props
 
-  // TODO: figure out a better way of including static styles, links, and fonts in the iframe
-  const initialContent = `
-<!DOCTYPE html><html><head>
-  ${document.head.innerHTML}
-</head><body><div></div></body></html>
-`
-
   return (
     <Frame
-      initialContent={initialContent}
       style={{
         display: 'block',
         overflow: 'scroll',
