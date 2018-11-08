@@ -1,15 +1,15 @@
 {
-  "name": "react-styled-frame-example",
-  "homepage": "https://hydrateio.github.io/react-styled-frame",
+  "name": "react-styled-shadow-dom-example",
+  "homepage": "https://hydrateio.github.io/react-styled-shadow-dom",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-scripts": "^1.1.4",
-    "react-styled-frame": "link:..",
+    "react-styled-shadow-dom": "link:..",
     "styled-components": "^3.4.6",
     "styled-theming": "^2.2.0"
   },

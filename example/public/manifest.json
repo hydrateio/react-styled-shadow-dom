@@ -1,6 +1,6 @@
 {
-  "short_name": "react-styled-frame",
-  "name": "react-styled-frame",
+  "short_name": "react-styled-shadow-dom",
+  "name": "react-styled-shadow-dom",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

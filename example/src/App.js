@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import StyledFrame from 'react-styled-frame'
+import StyledShadow from 'react-styled-shadow-dom'
 import styled, { ThemeProvider } from 'styled-components'
 
 const Body = styled.div`
@@ -27,26 +27,29 @@ const Text = styled.h4`
 `
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <ThemeProvider theme={{ mode: 'dark' }}>
         <Body>
           <OuterBox>
-            If this demo is working properly for you, you should see a red iframe containing white text, all styled via <a href='https://github.com/styled-components/styled-components'>styled-components</a>.
+            If this demo is working properly for you, you should see a red
+            button containing white text, all styled via{' '}
+            <a href="https://github.com/styled-components/styled-components">
+              styled-components
+            </a>
+            .
           </OuterBox>
 
-          <StyledFrame
+          <StyledShadow
             style={{
               width: 320,
               margin: '0 auto'
             }}
           >
             <InnerBox>
-              <Text>
-                Hello iframe!
-              </Text>
+              <Text>Hello Shadow DOM!</Text>
             </InnerBox>
-          </StyledFrame>
+          </StyledShadow>
         </Body>
       </ThemeProvider>
     )

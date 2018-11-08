@@ -1,7 +1,7 @@
-import StyledFrame from './'
+import StyledShadow from './'
 
-describe('StyledFrame', () => {
+describe('StyledShadow', () => {
   it('is truthy', () => {
-    expect(StyledFrame).toBeTruthy()
+    expect(StyledShadow).toBeTruthy()
   })
 })
